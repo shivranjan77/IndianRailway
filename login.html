@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Login</title>
+<style>
+.container {
+position:relative;
+}
+.one {
+position:absolute;
+top: 50px;
+left: 350px;
+}
+body
+{
+	color: white;
+	background: url("rail.jpg");
+	background-repeat: no-repeat;
+	background-size: 1920px 760px;
+
+}
+</style>
+<script type="text/javascript" language="javascript">
+	function validate(frm) {
+		
+		var uname=document.getElementById('name').value;
+		if (uname.length==0) {
+			alert("Kindly enter the all detail......");
+			return false;}
+			else
+			{
+				alert("Login sucessfull");
+				return true;	
+			}
+		
+	}
+</script>
+</head>
+</head>
+<body >	
+<div class="container">
+<h1 class="one" > </h1>
+<a href= "home page.html">Home</a>&nbsp;&nbsp;
+<a href=register.html>Sign Up</a>
+<form  method="post" action="home page.html" style="text-align: center;" onsubmit="javascript:return validate(this);">
+	<h1>Login</h1>
+	User_Name : <input type="text" placeholder="UserName or Contact no" id="name" name="uname" required="required">
+	<br>
+	<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;Password : <input type="password" id="name" name="pass" required="required">
+	<br>
+	<br>
+	<input type="submit" value="Login" ><br>
+	New user? click here for <a href="register.html">Register</a><br>
+	Forgot password? click here to <a href="resetPass.html">Reset Password</a>
+	
+	</form>
+	</div>
+	<br><br><br><footer>
+</body>
+</html>

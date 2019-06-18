@@ -1,0 +1,26 @@
+body
+{
+background-image:url(I.jpg);
+background-repeat:no-repeat;
+background-size:cover;
+}
+
+#p
+{
+font-size:35px;
+color:navi blue;
+background-color:#FW5678;
+font-family:georgia;
+}
+#three
+{border-radius:20px;
+	height: 40px;
+	width: 230px;
+	font-size: 30px;
+}
+#t
+{border-radius:20px;
+	height: 40px;
+	width: 260px;
+	font-size: 30px;
+}

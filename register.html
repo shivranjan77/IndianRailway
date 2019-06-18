@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Registration</title>
+<style>
+.container {
+position:relative;
+
+}
+.one {
+position:absolute;
+top: 50px;
+left: 350px;
+}
+body
+{
+	color: white;
+	background: url("rail.jpg");
+	background-repeat: no-repeat;
+	background-size: 1920px 760px;
+
+}
+</style>
+<script type="text/javascript" language="javascript">
+	function validate(frm) {
+		
+		var uname=document.getElementById('name').value;
+		if (uname.length==0) {
+			alert("Kindly enter the all detail......");
+			return false;}
+			else
+			{
+				alert("Registration sucessfull");
+				return true;	
+			}
+		
+	}
+</script>
+</head>
+<body style="text-align: right;">
+<body bgcolor="#E6E6FA">
+<div class="container">
+<h1 class="one" ></h1>
+</div>
+<a left" href=login.html>Sign In</a>&nbsp;&nbsp;
+<a left" href=register.html>Sign Up</a>
+<form action="home page.html" method="post"  style="text-align: center;" onsubmit="javascript:return validate(this);">
+	<h1>Registration Form</h1>
+	<br>
+	
+	 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	 Name &nbsp; : &nbsp;&nbsp;<input type="text" name="name" id="name" required="required" >
+	<br>
+	<br>
+	User_Name &nbsp;:&nbsp;&nbsp; <input type="text"  name="uname" id="name" required="required">
+	<br>
+	<br>
+	 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	 Email &nbsp;:&nbsp;&nbsp; <input type="email" name="email" id="name" required="required">
+	<br>
+	<br>
+	 
+	&nbsp;&nbsp;Password &nbsp;: &nbsp;&nbsp;<input type="password" id="name" name="pass" required="required">
+	<br>
+	<br>
+	Gender 
+	&nbsp;&nbsp;:&nbsp;&nbsp; <input type="radio" value="male" name="gender">Male 
+			 <input type="radio" value="female" name="gender">Female
+			 <br>
+			 <br>
+	Country &nbsp;
+	:&nbsp;&nbsp; <select name="country" size="1"> 
+				<option>Select</option>
+				<option value="afghanistan">Afghanistan</option>
+				<option value="bangladesh">Bangladesh</option>
+				<option value="china">China</option>
+				<option value="denmark">Denmark</option>
+				<option value="egypt">Egypt</option>
+				<option value="france">France</option>
+				<option value="germany">Germany</option>
+				<option value="hongkong">Hong Kong</option>
+				<option value="india">India</option>
+				<option value="japan">Japan</option>
+				<option value="kenya">Kenya</option>
+				<option value="libya">Libya</option>
+				<option value="mexico">Mexico</option>
+				<option value="nepal">Nepal</option>
+				<option value="oman">Oman</option>
+				<option value="pakistan">Pakistan</option>
+				<option value="qatar">Qatar</option>
+				<option value="romania">Romania</option>
+				<option value="srilanka">Sri lanka</option>
+				<option value="turkey">Turkey</option>
+				<option value="uganda">Uganda</option>
+				<option value="vietnam">Vietnam</option>
+				<option value="western sahara">Western Sahara</option>
+				<option value="yemen">Yemen</option>
+				<option value="zimbabwe">Zimbabwe</option>
+			</select>
+	<br>	
+	<br>	
+	Contact &nbsp;&nbsp;&nbsp;: &nbsp;
+	<input type="text",value="contact", name="contact" id="name" required="required">
+	<br>
+	<br>	 
+	<input type="submit"  value="Register" name="submit" >
+	</form>
+	<br><br><br><footer>
+</body>
+</html>

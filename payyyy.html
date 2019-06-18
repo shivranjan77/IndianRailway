@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>payment</title>
+	<script type="text/javascript" language="javascript">
+		function validate(frm)
+{
+	var number,name,cnum;
+	number=document.getElementById("cname").value;
+	name=document.getElementById("cardname").value;
+	cnum=document.getElementById("cnumber").value;
+	if(number.length==0)
+{
+	alert("kindly enter the detail");
+	return false;
+} 
+else if (!number.match(/^[0-9]{16}$/)) {
+	alert("Card number must be contain only number ");
+	return false;
+}
+else if(name.length==0)
+{
+	alert("Kindly enter cardholder name");
+	return false;
+}
+else if(cnum.length==0)
+{
+	alert("Kindly enter cvv number");
+	return false;
+}
+else
+{
+	return true;
+}
+}
+</script>
+<style type="text/css">
+	div{
+		border: 5px solid black;
+		margin:50px 250px;
+		width:50%;
+		background-color: #FFEBCD;
+	}
+	body{
+		font-size: 20px;
+		background-image: url(I.jpg);
+	}
+</style>
+</head>
+<body >
+	<div>
+	<fieldset>
+		<legend>Card Details:</legend>
+		<form method="post" action="confir.html" onsubmit="javascript:return validate(this);">
+			Card Type:
+			<select id="list1" size="1">
+				<option>Select</option>
+				<option>Visa</option>
+				<option>Mastercard</option>
+				<option>Rupay</option>
+			</select></br></br>
+			Card Number:
+			<input type="text" name="cname" id="cname" maxlength="16" placeholder="XXXX-XXXX-XXXX-XXXX"></br></br>
+			Card CVV Code:
+			<input type="text" name="cnumber" maxlength="3" id="cnumber" placeholder="CVV"></br></br>
+			Expiry Date:<input type="text" name="month" placeholder="Month">&nbsp<input type="text" name="year" placeholder="Year"></br></br>
+			Cardholder Name:
+			<input type="text" name="cardname" id="cardname" placeholder="Cardholder Name"></br></br>
+			<input type="submit" value="Pay Now">&nbsp 
+		</form>
+		<center> <a href="home page.html"><input type="submit" value="Back"></center>
+	</fieldset>
+</div>
+</body>
+</html>

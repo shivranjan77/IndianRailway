@@ -1,0 +1,87 @@
+* {
+  box-sizing: border-box;
+}
+body
+{
+  font-family: 'open sans', helvetica, arial, sans;
+  background: url("back.jpg") no-repeat center center fixed;
+  background-size: cover;
+}
+.log-form 
+{
+  margin-top: 10%;
+  float: left;
+  margin-left: 30%;
+  width: 40%;
+  min-width: 320px;
+  max-width: 475px;
+  background: #fff;
+  position: absolute;
+}
+
+.log-form form 
+{
+
+  display: block;
+  width: 100%;
+  padding: 2em;
+  text-align: center;
+}
+.log-form h2 
+{
+  color: white;
+  font-family: 'open sans condensed';
+  font-size: 1.35em;
+  display: block;
+  background: #24271b;
+  width: 100%;
+  text-transform: uppercase;
+  padding: .75em 1em .75em 1.5em;
+  border: 1px solid #1d1d1d;
+  margin: 0;
+  font-weight: 200;
+}
+.log-form input 
+{
+  display: block;
+  margin: auto auto;
+  width: 100%;
+  margin-bottom: 2em;
+  padding: .5em 0;
+  border: none;
+  border-bottom: 1px solid #eaeaea;
+  padding-bottom: 1.25em;
+  color: #757575;
+}
+.log-form input:focus {
+  outline: none;
+}
+.log-form .btn {
+  display: inline-block;
+  background: #1fb5bf;
+  border: 1px solid #1ba0a9;
+  padding: .5em 2em;
+  color: white;
+  margin-right: .5em;
+
+}
+.log-form .btn:hover {
+  background: #23cad5;
+}
+.log-form .btn:focus {
+  outline: none;
+}
+.log-form .forgot {
+  color: #33d3de;
+  line-height: .5px;
+  position: relative;
+  top: 2.5em;
+  text-decoration: none;
+  font-size: .75em;
+  margin: 0;
+  padding: 0;
+  float: right;
+}
+.log-form .forgot:hover {
+  color: #1ba0a9;
+}
